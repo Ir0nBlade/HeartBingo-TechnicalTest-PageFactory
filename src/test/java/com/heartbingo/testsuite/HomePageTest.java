@@ -24,7 +24,6 @@ public class HomePageTest extends TestBase {
     public void initialize(){
         homePage = new HomePage();
         termsAndconditonsPage = new TermsAndconditonsPage();
-
     }
 
     /**
@@ -32,7 +31,7 @@ public class HomePageTest extends TestBase {
      *  Verification is done by validating if elements are dislplayed on homepage
      *
      */
-    @Test
+    @Test (priority=0, groups={"sanity", "regression"})
     public void verifyUserShouldNavigateToHomePageSuccessfully(){
         homePage.acceptCookies();
         homePage.verifyThatLoginButtonIsVisible();
@@ -45,7 +44,7 @@ public class HomePageTest extends TestBase {
      * This Test will verify that user should navigate to menu and click on The Terms & Conditons link
      * And verify Terms & condition visible on Terms and condition page
      */
-    @Test
+    @Test (priority=1, groups={"smoke", "regression"})
     public void verifyUsershouldNavigateToTermsAndConditons(){
         homePage.acceptCookies();
         homePage.clickOnMenuButton();

@@ -2,6 +2,7 @@ package com.heartbingo.testbase;
 
 import com.heartbingo.propertyreader.PropertyReader;
 import com.heartbingo.utility.Utility;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 /**
@@ -13,13 +14,13 @@ public class TestBase extends Utility {
 
     String browser = PropertyReader.getInstance().getProperty("browser");
 
-    @BeforeMethod(groups = {"sanity", "Smoke Test", "regression"})
+    @BeforeMethod(groups = {"sanity", "smoke", "regression"})
     public void setUp(){
         selectBrowser(browser);
     }
 
-//    @AfterMethod(groups = {"sanity", "smoke", "regression"})
-//    public void tearDown(){
-//        closeBrowser();
-//    }
+    @AfterMethod(groups = {"sanity", "smoke", "regression"})
+    public void tearDown(){
+        closeBrowser();
+    }
 }

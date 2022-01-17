@@ -117,10 +117,6 @@ public class SignUpPage extends Utility {
     @FindBy (xpath = "//span[@class='bvs-icon is-big is-cross is-inverted']")
     WebElement closeButton;
 
-    @CacheLookup
-    @FindBy (partialLinkText = "Welcome")
-    WebElement welcomemessage;
-
     public String getJoinHeartBingoText(){
         CustomListeners.test.log(Status.PASS,"Get text from Join Heart Bingo ");
         return doGetTextFromElement(joinHeartBingoText);
@@ -154,61 +150,74 @@ public class SignUpPage extends Utility {
 
     public void selectGender(String gen){
         doclickOnElement(gender, gen);
+        CustomListeners.test.log(Status.PASS,"Click on Gender Male or Female ");
     }
 
     public void enterEmailAddress(String email){
         doSendTextToElement(emailField, email);
+        CustomListeners.test.log(Status.PASS,"Enter email address into email field ");
     }
 
     public void enterPassword(String password){
         doSendTextToElement(passwordField, password);
+        CustomListeners.test.log(Status.PASS,"Enter password into password field ");
     }
 
     public void enterMobileNumber(String mobile){
         doSendTextToElement(mobileNumberField, mobile);
+        CustomListeners.test.log(Status.PASS,"Enter Mobile number ");
     }
 
     public String getAgeWarningText(){
+        CustomListeners.test.log(Status.PASS,"Get text for Age warning message ");
         return doGetTextFromElement(ageWarningText);
     }
 
     public void selectDayMonthYearForDateOfBirth(String day, String month, String year){
         doSelectByVisibleTextFromDropDown(dobDay, day);
+        CustomListeners.test.log(Status.PASS,"Select Day from dropdown for Date of Birth ");
         doSelectByVisibleTextFromDropDown(dobMonth, month);
+        CustomListeners.test.log(Status.PASS,"Select Month from dropdown for Date of Birth ");
         doSelectByVisibleTextFromDropDown(dobYear, year);
+        CustomListeners.test.log(Status.PASS,"Select Year from dropdown for Date of Birth ");
     }
 
     public void enterAddressDetails(String address1, String city, String postcode){
         doSendTextToElement(address1Field, address1);
+        CustomListeners.test.log(Status.PASS,"Enter address line 1 in address field ");
         doSendTextToElement(cityField, city);
+        CustomListeners.test.log(Status.PASS,"Enter City into City field ");
         doSendTextToElement(postcodeField, postcode);
+        CustomListeners.test.log(Status.PASS,"Enter postcode into Postcode field ");
     }
 
     public void doClickOnContinueButton(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         doClickOnElement(getContinueButton);
+        CustomListeners.test.log(Status.PASS,"Click on Continue button ");
     }
 
     public void selectCurrency(String currency){
         doclickOnElement(selectCurrency, currency);
+        CustomListeners.test.log(Status.PASS,"Select Currency GBP or EUR ");
     }
 
     public void selectExclusiveOffers(String yesOrNo){
         doclickOnElement(selectExclusiveOffers, yesOrNo);
+        CustomListeners.test.log(Status.PASS,"Select Yes or No option for Exclusive offers ");
     }
 
     public void clickTermsAndConditionCheckbox(){
         doClickOnElement(checkbox);
+        CustomListeners.test.log(Status.PASS,"Click on checkbox for accepting Terms and Conditions ");
     }
 
     public void clickOnCreateAccountButton(){
         doClickOnElement(createAccountButton);
+        CustomListeners.test.log(Status.PASS,"Click on Create Account button ");
     }
     public void clickOncloseButton(){
         doClickOnElement(closeButton);
-    }
-
-    public String getWelcomeMessage(){
-        return doGetTextFromElement(welcomemessage);
+        CustomListeners.test.log(Status.PASS,"Click on Close Icon ");
     }
 }

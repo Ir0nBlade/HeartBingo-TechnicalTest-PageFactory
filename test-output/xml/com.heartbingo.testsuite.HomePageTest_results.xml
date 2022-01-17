@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.365">
+           time="2.438">
   <properties />
   
   
-            <testcase name="verifyUsershouldNavigateToTermsAndConditons" time="0.819" classname="com.heartbingo.testsuite.HomePageTest" />
-                <testcase name="verifyUserShouldNavigateToHomePageSuccessfully" time="0.546" classname="com.heartbingo.testsuite.HomePageTest" />
+            <testcase name="verifyUsershouldNavigateToTermsAndConditons" time="1.907" classname="com.heartbingo.testsuite.HomePageTest" />
+                <testcase name="verifyUserShouldNavigateToHomePageSuccessfully" time="0.531" classname="com.heartbingo.testsuite.HomePageTest" />
       
 </testsuite>

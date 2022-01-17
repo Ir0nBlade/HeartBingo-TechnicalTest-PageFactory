@@ -30,7 +30,7 @@ public class HomePage extends Utility {
     WebElement loginButton;
 
     @CacheLookup
-    @FindBy (linkText = "Sign Up")
+    @FindBy (xpath = "//a[contains(text(),'Sign Up')]")
     WebElement signUpButton;
 
     @CacheLookup
@@ -72,13 +72,14 @@ public class HomePage extends Utility {
     }
 
     public void clickOnLoginbutton(){
-//        CustomListeners.test.log(Status.PASS,"Click on Login Button ");
+        CustomListeners.test.log(Status.PASS,"Click on Login Button ");
         doClickOnElement(loginButton);
     }
 
     public void clickOnSignUpButton(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         doClickOnElement(signUpButton);
-//        CustomListeners.test.log(Status.PASS,"Click on SignUp button ");
+        CustomListeners.test.log(Status.PASS,"Click on SignUp button ");
     }
 
     public String getdailyJackpotsText(){
