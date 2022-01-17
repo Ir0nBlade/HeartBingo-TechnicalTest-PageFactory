@@ -360,6 +360,11 @@ public class Utility extends ManageDriver {
         wait.until(ExpectedConditions.visibilityOfElementLocated(by)).click();
     }
 
+    // wait before click on element --> wait until visibility of web element
+    public void doWaitUntilVisibilityOfElementLocatedAndthenClick(WebElement element, int seconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By) element)).click();
+    }
 
 
     /**
@@ -593,4 +598,6 @@ public class Utility extends ManageDriver {
         }
 
     }
+
+
 }

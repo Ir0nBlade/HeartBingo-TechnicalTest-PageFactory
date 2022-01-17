@@ -38,7 +38,7 @@ public class LoginTest extends TestBase {
         loginPage.enterPassword(doGetRandomString(9));
         loginPage.clickOnLoginButton();
         Assert.assertEquals(loginPage.getErrorMessageText(),"The username or password you entered is incorrect. Please try again.");
-        Assert.assertEquals(loginPage.forgottenYourPasswordLink(),"Forgotten your Password");
+        Assert.assertEquals(loginPage.forgottenYourPasswordLink(),"Forgotten your Password!");
     }
 
 }

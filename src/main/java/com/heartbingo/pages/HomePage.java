@@ -8,6 +8,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
+
 /**
  * @author Vimal Vithalpura
  * @project HeartBingo-Technical-Test-PageFactory
@@ -55,6 +57,9 @@ public class HomePage extends Utility {
     @FindBy (linkText = "Terms & Conditions")
     WebElement termsAndConditionsLink;
 
+    @CacheLookup
+    @FindBy (xpath = "//div[@class='site-header__user-details']//a[@class='site-header__my-account is-unverified']")
+    WebElement myAccountButton;
 
     public void verifyThatLoginButtonIsVisible(){
         verifyThatElementIsDisplayed(loginButton);
@@ -73,7 +78,7 @@ public class HomePage extends Utility {
 
     public void clickOnSignUpButton(){
         doClickOnElement(signUpButton);
-        CustomListeners.test.log(Status.PASS,"Click on SignUp button ");
+//        CustomListeners.test.log(Status.PASS,"Click on SignUp button ");
     }
 
     public String getdailyJackpotsText(){
@@ -106,5 +111,9 @@ public class HomePage extends Utility {
         CustomListeners.test.log(Status.PASS,"Click on Terms & Conditons Link ");
     }
 
+    public void clickOnMyAccountButton(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        doClickOnElement(myAccountButton);
+    }
 
 }
