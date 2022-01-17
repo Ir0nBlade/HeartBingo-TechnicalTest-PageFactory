@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Automation Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.365">
+  <properties />
+  
+  
+            <testcase name="verifyUsershouldNavigateToTermsAndConditons" time="0.819" classname="com.heartbingo.testsuite.HomePageTest" />
+                <testcase name="verifyUserShouldNavigateToHomePageSuccessfully" time="0.546" classname="com.heartbingo.testsuite.HomePageTest" />
+      
+</testsuite>
