@@ -1,0 +1,5 @@
+com\heartbingo\testsuite\HomePageTest.class
+com\heartbingo\testbase\TestBase.class
+com\heartbingo\testsuite\LoginTest.class
+com\heartbingo\testsuite\SignUpTest.class
+resources\testdata\TestData.class

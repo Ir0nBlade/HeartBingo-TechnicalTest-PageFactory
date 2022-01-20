@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.513">
+           time="1.962">
   <properties />
   
   
-            <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="2.513" classname="com.heartbingo.testsuite.LoginTest" />
+            <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="1.962" classname="com.heartbingo.testsuite.LoginTest" />
       
 </testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.heartbingo.testsuite.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyUsershouldNavigateToTermsAndConditons"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.heartbingo.testsuite.HomePageTest -->
+      <class name="com.heartbingo.testsuite.SignUpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.heartbingo.testsuite.SignUpTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

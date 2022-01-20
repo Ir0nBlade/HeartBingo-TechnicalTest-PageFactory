@@ -8,8 +8,6 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.time.Duration;
-
 /**
  * @author Vimal Vithalpura
  * @project HeartBingo-Technical-Test-PageFactory
@@ -44,10 +42,6 @@ public class SignUpPage extends Utility {
     @CacheLookup
     @FindBy (xpath = "//p[contains(text(),'Enter your full name to join Heart Bingo')]")
     WebElement joinHeartBingoText;
-
-    @CacheLookup
-    @FindBy (css = "label[for='account_gender_male']")
-    WebElement genderMale;
 
     @CacheLookup
     @FindBy (className = "bvs-button-card-alternative")
@@ -144,7 +138,6 @@ public class SignUpPage extends Utility {
     }
 
     public void clickOnContinueButton(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         doClickOnElement(continueButton);
         CustomListeners.test.log(Status.PASS,"Click on Continue button ");
     }
@@ -192,8 +185,7 @@ public class SignUpPage extends Utility {
         CustomListeners.test.log(Status.PASS,"Enter postcode into Postcode field ");
     }
 
-    public void doClickOnContinueButton(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    public void doClickOnContinueButton()  {
         doClickOnElement(getContinueButton);
         CustomListeners.test.log(Status.PASS,"Click on Continue button ");
     }

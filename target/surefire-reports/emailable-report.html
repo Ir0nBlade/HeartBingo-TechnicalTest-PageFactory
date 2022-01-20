@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">38,698</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.heartbingo.testsuite.HomePageTest</td><td><a href="#m0">verifyUsershouldNavigateToTermsAndConditons</a></td><td rowspan="1">1642685669116</td><td rowspan="1">1240</td></tr><tr class="failedodd"><td rowspan="1">com.heartbingo.testsuite.SignUpTest</td><td><a href="#m1">verifyUserShouldAbleToSignUpByEnteringMandatoryDetails</a></td><td rowspan="1">1642685677844</td><td rowspan="1">4843</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.heartbingo.testsuite.HomePageTest</td><td><a href="#m2">verifyUserShouldNavigateToHomePageSuccessfully</a></td><td rowspan="1">1642685652555</td><td rowspan="1">1007</td></tr><tr class="passedodd"><td rowspan="1">com.heartbingo.testsuite.LoginTest</td><td><a href="#m3">verifyUserShouldNotAbleToLoginWithInvalidUserName</a></td><td rowspan="1">1642685658594</td><td rowspan="1">1682</td></tr><tr class="passedeven"><td rowspan="2">com.heartbingo.testsuite.SignUpTest</td><td><a href="#m4">verifyFirstNameAndLastNameFieldShouldNotBeNull</a></td><td rowspan="1">1642685673551</td><td rowspan="1">394</td></tr><tr class="passedeven"><td><a href="#m5">verifyUserNavigateToSignUpPageSuccessfully</a></td><td rowspan="1">1642685664615</td><td rowspan="1">436</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.heartbingo.testsuite.HomePageTest#verifyUsershouldNavigateToTermsAndConditons</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-87, 598)
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;VIMAL&apos;, ip: &apos;10.10.10.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41d3264abe4c651205dc3d8c02554e8d, clickElement {id=feecb640-6f9f-44d2-ba65-899963b17283}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (41d3264abe4c651205dc3d8c02554e8d)] -&gt; link text: Terms &amp; Conditions]
+Session ID: 41d3264abe4c651205dc3d8c02554e8d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
+	at com.heartbingo.pages.HomePage.clickOnTermsAndConditonsLink(HomePage.java:105)
+	at com.heartbingo.testsuite.HomePageTest.verifyUsershouldNavigateToTermsAndConditons(HomePageTest.java:52)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.heartbingo.testsuite.SignUpTest#verifyUserShouldAbleToSignUpByEnteringMandatoryDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;regpath__button-next-text&quot;&gt;...&lt;/span&gt; is not clickable at point (494, 608). Other element would receive the click: &lt;div class=&quot;cookies-policy cookies-policy--flat&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;VIMAL&apos;, ip: &apos;10.10.10.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39a2e16f7c14684a95577a5ab957b6ad, clickElement {id=9b3f1031-77ea-4d8c-aa5b-72d62af9f4f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:55442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55442/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (39a2e16f7c14684a95577a5ab957b6ad)] -&gt; xpath: //span[contains(text(),&apos;Continue&apos;)]]
+Session ID: 39a2e16f7c14684a95577a5ab957b6ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
+	at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:190)
+	at com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(SignUpTest.java:75)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.heartbingo.testsuite.HomePageTest#verifyUserShouldNavigateToHomePageSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.heartbingo.testsuite.LoginTest#verifyUserShouldNotAbleToLoginWithInvalidUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.heartbingo.testsuite.SignUpTest#verifyFirstNameAndLastNameFieldShouldNotBeNull</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.heartbingo.testsuite.SignUpTest#verifyUserNavigateToSignUpPageSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

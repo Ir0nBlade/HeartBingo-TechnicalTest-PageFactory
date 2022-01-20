@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 39.285 s <<< FAILURE! - in TestSuite
+verifyUsershouldNavigateToTermsAndConditons(com.heartbingo.testsuite.HomePageTest)  Time elapsed: 1.424 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (-87, 598)
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41d3264abe4c651205dc3d8c02554e8d, clickElement {id=feecb640-6f9f-44d2-ba65-899963b17283}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (41d3264abe4c651205dc3d8c02554e8d)] -> link text: Terms & Conditions]
+Session ID: 41d3264abe4c651205dc3d8c02554e8d
+	at com.heartbingo.testsuite.HomePageTest.verifyUsershouldNavigateToTermsAndConditons(HomePageTest.java:52)
+
+verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(com.heartbingo.testsuite.SignUpTest)  Time elapsed: 4.971 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="regpath__button-next-text">...</span> is not clickable at point (494, 608). Other element would receive the click: <div class="cookies-policy cookies-policy--flat">...</div>
+  (Session info: chrome=97.0.4692.71)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39a2e16f7c14684a95577a5ab957b6ad, clickElement {id=9b3f1031-77ea-4d8c-aa5b-72d62af9f4f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:55442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55442/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (39a2e16f7c14684a95577a5ab957b6ad)] -> xpath: //span[contains(text(),'Continue')]]
+Session ID: 39a2e16f7c14684a95577a5ab957b6ad
+	at com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(SignUpTest.java:75)
+
