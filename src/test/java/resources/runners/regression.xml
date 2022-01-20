@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1">
+    <groups>
+        <run>
+            <include name="regression"/>
+
+        </run>
+    </groups>
+    <test name="Sanity Test">
+        <classes>
+            <class name="com.heartbingo.testsuite.HomePageTest"/>
+            <class name="com.heartbingo.testsuite.LoginTest"/>
+            <class name="com.heartbingo.testsuite.SignUpTest"/>
+        </classes>
+    </test>
+
+</suite>

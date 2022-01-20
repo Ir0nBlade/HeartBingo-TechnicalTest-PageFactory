@@ -117,6 +117,7 @@ public class SignUpPage extends Utility {
     @FindBy (xpath = "//span[@class='bvs-icon is-big is-cross is-inverted']")
     WebElement closeButton;
 
+
     public String getJoinHeartBingoText(){
         CustomListeners.test.log(Status.PASS,"Get text from Join Heart Bingo ");
         return doGetTextFromElement(joinHeartBingoText);

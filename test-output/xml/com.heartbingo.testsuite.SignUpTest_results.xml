@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Automation Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.355">
+  <properties />
+  
+  
+            <testcase name="verifyFirstNameAndLastNameFieldShouldNotBeNull" time="0.985" classname="com.heartbingo.testsuite.SignUpTest" />
+                <testcase name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" time="5.617" classname="com.heartbingo.testsuite.SignUpTest" />
+                <testcase name="verifyUserNavigateToSignUpPageSuccessfully" time="0.753" classname="com.heartbingo.testsuite.SignUpTest" />
+      
+</testsuite>

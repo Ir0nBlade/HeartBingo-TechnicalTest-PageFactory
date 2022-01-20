@@ -21,9 +21,6 @@ public class HomePage extends Utility {
         PageFactory.initElements(driver, this);
     }
 
-    @CacheLookup
-    @FindBy (xpath = "//div[@class='bvs-site-logo']")
-    WebElement heartBingoLogo;
 
     @CacheLookup
     @FindBy (xpath = "//a[contains(text(),'Log In')]")
@@ -57,9 +54,6 @@ public class HomePage extends Utility {
     @FindBy (linkText = "Terms & Conditions")
     WebElement termsAndConditionsLink;
 
-    @CacheLookup
-    @FindBy (xpath = "//div[@class='site-header__user-details']//a[@class='site-header__my-account is-unverified']")
-    WebElement myAccountButton;
 
     public void verifyThatLoginButtonIsVisible(){
         verifyThatElementIsDisplayed(loginButton);
@@ -110,11 +104,6 @@ public class HomePage extends Utility {
     public void clickOnTermsAndConditonsLink(){
         doClickOnElement(termsAndConditionsLink);
         CustomListeners.test.log(Status.PASS,"Click on Terms & Conditons Link ");
-    }
-
-    public void clickOnMyAccountButton(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        doClickOnElement(myAccountButton);
     }
 
 }
