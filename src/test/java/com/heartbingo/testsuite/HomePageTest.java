@@ -45,7 +45,7 @@ public class HomePageTest extends TestBase {
      * And verify Terms & condition visible on Terms and condition page
      */
     @Test (priority=1, groups={"smoke", "regression"})
-    public void verifyUsershouldNavigateToTermsAndConditons(){
+    public void verifyUsershouldNavigateToTermsAndConditons() throws InterruptedException {
         homePage.acceptCookies();
         homePage.clickOnMenuButton();
         Assert.assertEquals(homePage.getMordenSlaveryStatementText(),"Modern Slavery Statement");

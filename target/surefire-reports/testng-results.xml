@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="38698" started-at="2022-01-20T13:34:04Z" finished-at="2022-01-20T13:34:43Z">
+  <suite name="Surefire suite" duration-ms="29109" started-at="2022-01-21T19:14:31Z" finished-at="2022-01-21T19:15:00Z">
     <groups>
       <group name="regression">
         <method signature="HomePageTest.verifyUserShouldNavigateToHomePageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUserShouldNavigateToHomePageSuccessfully" class="com.heartbingo.testsuite.HomePageTest"/>
         <method signature="HomePageTest.verifyUsershouldNavigateToTermsAndConditons()[pri:1, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUsershouldNavigateToTermsAndConditons" class="com.heartbingo.testsuite.HomePageTest"/>
         <method signature="LoginTest.verifyUserShouldNotAbleToLoginWithInvalidUserName()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="verifyUserShouldNotAbleToLoginWithInvalidUserName" class="com.heartbingo.testsuite.LoginTest"/>
-        <method signature="SignUpTest.verifyFirstNameAndLastNameFieldShouldNotBeNull()[pri:1, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyFirstNameAndLastNameFieldShouldNotBeNull" class="com.heartbingo.testsuite.SignUpTest"/>
+        <method signature="SignUpTest.verifyFirstNameAndLastNameFieldShouldNotBeNull()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyFirstNameAndLastNameFieldShouldNotBeNull" class="com.heartbingo.testsuite.SignUpTest"/>
         <method signature="SignUpTest.verifyUserNavigateToSignUpPageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserNavigateToSignUpPageSuccessfully" class="com.heartbingo.testsuite.SignUpTest"/>
-        <method signature="SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails()[pri:2, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" class="com.heartbingo.testsuite.SignUpTest"/>
+        <method signature="SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails()[pri:1, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" class="com.heartbingo.testsuite.SignUpTest"/>
       </group> <!-- regression -->
       <group name="smoke">
         <method signature="HomePageTest.verifyUsershouldNavigateToTermsAndConditons()[pri:1, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUsershouldNavigateToTermsAndConditons" class="com.heartbingo.testsuite.HomePageTest"/>
@@ -18,203 +18,76 @@
       </group> <!-- smoke -->
       <group name="sanity">
         <method signature="HomePageTest.verifyUserShouldNavigateToHomePageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUserShouldNavigateToHomePageSuccessfully" class="com.heartbingo.testsuite.HomePageTest"/>
-        <method signature="SignUpTest.verifyFirstNameAndLastNameFieldShouldNotBeNull()[pri:1, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyFirstNameAndLastNameFieldShouldNotBeNull" class="com.heartbingo.testsuite.SignUpTest"/>
+        <method signature="SignUpTest.verifyFirstNameAndLastNameFieldShouldNotBeNull()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyFirstNameAndLastNameFieldShouldNotBeNull" class="com.heartbingo.testsuite.SignUpTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Surefire test" duration-ms="38698" started-at="2022-01-20T13:34:04Z" finished-at="2022-01-20T13:34:43Z">
+    <test name="Surefire test" duration-ms="29109" started-at="2022-01-21T19:14:31Z" finished-at="2022-01-21T19:15:00Z">
       <class name="com.heartbingo.testsuite.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="setUp" is-config="true" duration-ms="4323" started-at="2022-01-20T13:34:14Z" finished-at="2022-01-20T13:34:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="setUp" is-config="true" duration-ms="2872" started-at="2022-01-21T19:14:36Z" finished-at="2022-01-21T19:14:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="initialize" is-config="true" duration-ms="4" started-at="2022-01-20T13:34:18Z" finished-at="2022-01-20T13:34:18Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="initialize" is-config="true" duration-ms="2" started-at="2022-01-21T19:14:39Z" finished-at="2022-01-21T19:14:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="verifyUserShouldNotAbleToLoginWithInvalidUserName()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="verifyUserShouldNotAbleToLoginWithInvalidUserName" duration-ms="1682" started-at="2022-01-20T13:34:18Z" finished-at="2022-01-20T13:34:20Z">
+        <test-method status="PASS" signature="verifyUserShouldNotAbleToLoginWithInvalidUserName()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="verifyUserShouldNotAbleToLoginWithInvalidUserName" duration-ms="2485" started-at="2022-01-21T19:14:39Z" finished-at="2022-01-21T19:14:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserShouldNotAbleToLoginWithInvalidUserName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="tearDown" is-config="true" duration-ms="568" started-at="2022-01-20T13:34:20Z" finished-at="2022-01-20T13:34:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.LoginTest@464bee09]" name="tearDown" is-config="true" duration-ms="573" started-at="2022-01-21T19:14:42Z" finished-at="2022-01-21T19:14:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.heartbingo.testsuite.LoginTest -->
-      <class name="com.heartbingo.testsuite.SignUpTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="setUp" is-config="true" duration-ms="3764" started-at="2022-01-20T13:34:20Z" finished-at="2022-01-20T13:34:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="initialize" is-config="true" duration-ms="5" started-at="2022-01-20T13:34:24Z" finished-at="2022-01-20T13:34:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="verifyUserNavigateToSignUpPageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserNavigateToSignUpPageSuccessfully" duration-ms="436" started-at="2022-01-20T13:34:24Z" finished-at="2022-01-20T13:34:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserNavigateToSignUpPageSuccessfully -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="575" started-at="2022-01-20T13:34:25Z" finished-at="2022-01-20T13:34:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="setUp" is-config="true" duration-ms="2437" started-at="2022-01-20T13:34:31Z" finished-at="2022-01-20T13:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="initialize" is-config="true" duration-ms="3" started-at="2022-01-20T13:34:33Z" finished-at="2022-01-20T13:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="verifyFirstNameAndLastNameFieldShouldNotBeNull()[pri:1, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyFirstNameAndLastNameFieldShouldNotBeNull" duration-ms="394" started-at="2022-01-20T13:34:33Z" finished-at="2022-01-20T13:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFirstNameAndLastNameFieldShouldNotBeNull -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="572" started-at="2022-01-20T13:34:33Z" finished-at="2022-01-20T13:34:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="setUp" is-config="true" duration-ms="3322" started-at="2022-01-20T13:34:34Z" finished-at="2022-01-20T13:34:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="initialize" is-config="true" duration-ms="2" started-at="2022-01-20T13:34:37Z" finished-at="2022-01-20T13:34:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails()[pri:2, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" duration-ms="4843" started-at="2022-01-20T13:34:37Z" finished-at="2022-01-20T13:34:42Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="regpath__button-next-text">...</span> is not clickable at point (494, 608). Other element would receive the click: <div class="cookies-policy cookies-policy--flat">...</div>
-  (Session info: chrome=97.0.4692.71)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [39a2e16f7c14684a95577a5ab957b6ad, clickElement {id=9b3f1031-77ea-4d8c-aa5b-72d62af9f4f0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:55442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55442/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (39a2e16f7c14684a95577a5ab957b6ad)] -> xpath: //span[contains(text(),'Continue')]]
-Session ID: 39a2e16f7c14684a95577a5ab957b6ad]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="regpath__button-next-text">...</span> is not clickable at point (494, 608). Other element would receive the click: <div class="cookies-policy cookies-policy--flat">...</div>
-  (Session info: chrome=97.0.4692.71)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [39a2e16f7c14684a95577a5ab957b6ad, clickElement {id=9b3f1031-77ea-4d8c-aa5b-72d62af9f4f0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:55442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55442/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (39a2e16f7c14684a95577a5ab957b6ad)] -> xpath: //span[contains(text(),'Continue')]]
-Session ID: 39a2e16f7c14684a95577a5ab957b6ad
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy15.click(Unknown Source)
-at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
-at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:190)
-at com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(SignUpTest.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserShouldAbleToSignUpByEnteringMandatoryDetails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="574" started-at="2022-01-20T13:34:42Z" finished-at="2022-01-20T13:34:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.heartbingo.testsuite.SignUpTest -->
       <class name="com.heartbingo.testsuite.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="7618" started-at="2022-01-20T13:34:04Z" finished-at="2022-01-20T13:34:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="4125" started-at="2022-01-21T19:14:31Z" finished-at="2022-01-21T19:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="initialize" is-config="true" duration-ms="42" started-at="2022-01-20T13:34:12Z" finished-at="2022-01-20T13:34:12Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="initialize" is-config="true" duration-ms="14" started-at="2022-01-21T19:14:35Z" finished-at="2022-01-21T19:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="verifyUserShouldNavigateToHomePageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUserShouldNavigateToHomePageSuccessfully" duration-ms="1007" started-at="2022-01-20T13:34:12Z" finished-at="2022-01-20T13:34:13Z">
+        <test-method status="PASS" signature="verifyUserShouldNavigateToHomePageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUserShouldNavigateToHomePageSuccessfully" duration-ms="394" started-at="2022-01-21T19:14:35Z" finished-at="2022-01-21T19:14:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserShouldNavigateToHomePageSuccessfully -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="700" started-at="2022-01-20T13:34:13Z" finished-at="2022-01-20T13:34:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="561" started-at="2022-01-21T19:14:36Z" finished-at="2022-01-21T19:14:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="3487" started-at="2022-01-20T13:34:25Z" finished-at="2022-01-20T13:34:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="2403" started-at="2022-01-21T19:14:49Z" finished-at="2022-01-21T19:14:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="initialize" is-config="true" duration-ms="2" started-at="2022-01-20T13:34:29Z" finished-at="2022-01-20T13:34:29Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="initialize" is-config="true" duration-ms="1" started-at="2022-01-21T19:14:51Z" finished-at="2022-01-21T19:14:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="verifyUsershouldNavigateToTermsAndConditons()[pri:1, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUsershouldNavigateToTermsAndConditons" duration-ms="1240" started-at="2022-01-20T13:34:29Z" finished-at="2022-01-20T13:34:30Z">
+        <test-method status="FAIL" signature="verifyUsershouldNavigateToTermsAndConditons()[pri:1, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="verifyUsershouldNavigateToTermsAndConditons" duration-ms="1233" started-at="2022-01-21T19:14:51Z" finished-at="2022-01-21T19:14:53Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element is not clickable at point (-87, 598)
-  (Session info: chrome=97.0.4692.71)
+  (Session info: chrome=97.0.4692.99)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [41d3264abe4c651205dc3d8c02554e8d, clickElement {id=feecb640-6f9f-44d2-ba65-899963b17283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (41d3264abe4c651205dc3d8c02554e8d)] -> link text: Terms & Conditions]
-Session ID: 41d3264abe4c651205dc3d8c02554e8d]]>
+Command: [3c7fdabec7f157d7049fb1afb38faf43, clickElement {id=7ab0ad75-be68-4890-81f9-84910321d6a5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50293/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3c7fdabec7f157d7049fb1afb38faf43)] -> link text: Terms & Conditions]
+Session ID: 3c7fdabec7f157d7049fb1afb38faf43]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-87, 598)
-  (Session info: chrome=97.0.4692.71)
+  (Session info: chrome=97.0.4692.99)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [41d3264abe4c651205dc3d8c02554e8d, clickElement {id=feecb640-6f9f-44d2-ba65-899963b17283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (41d3264abe4c651205dc3d8c02554e8d)] -> link text: Terms & Conditions]
-Session ID: 41d3264abe4c651205dc3d8c02554e8d
+Command: [3c7fdabec7f157d7049fb1afb38faf43, clickElement {id=7ab0ad75-be68-4890-81f9-84910321d6a5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50293/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3c7fdabec7f157d7049fb1afb38faf43)] -> link text: Terms & Conditions]
+Session ID: 3c7fdabec7f157d7049fb1afb38faf43
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -273,11 +146,138 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUsershouldNavigateToTermsAndConditons -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="569" started-at="2022-01-20T13:34:30Z" finished-at="2022-01-20T13:34:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.HomePageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="557" started-at="2022-01-21T19:14:53Z" finished-at="2022-01-21T19:14:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.heartbingo.testsuite.HomePageTest -->
+      <class name="com.heartbingo.testsuite.SignUpTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="setUp" is-config="true" duration-ms="2293" started-at="2022-01-21T19:14:42Z" finished-at="2022-01-21T19:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="initialize" is-config="true" duration-ms="7" started-at="2022-01-21T19:14:45Z" finished-at="2022-01-21T19:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="verifyFirstNameAndLastNameFieldShouldNotBeNull()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyFirstNameAndLastNameFieldShouldNotBeNull" duration-ms="501" started-at="2022-01-21T19:14:45Z" finished-at="2022-01-21T19:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstNameAndLastNameFieldShouldNotBeNull -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="553" started-at="2022-01-21T19:14:45Z" finished-at="2022-01-21T19:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="setUp" is-config="true" duration-ms="2415" started-at="2022-01-21T19:14:46Z" finished-at="2022-01-21T19:14:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="initialize" is-config="true" duration-ms="3" started-at="2022-01-21T19:14:48Z" finished-at="2022-01-21T19:14:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="verifyUserNavigateToSignUpPageSuccessfully()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserNavigateToSignUpPageSuccessfully" duration-ms="456" started-at="2022-01-21T19:14:48Z" finished-at="2022-01-21T19:14:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNavigateToSignUpPageSuccessfully -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="557" started-at="2022-01-21T19:14:48Z" finished-at="2022-01-21T19:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="setUp" is-config="true" duration-ms="2232" started-at="2022-01-21T19:14:53Z" finished-at="2022-01-21T19:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="initialize" is-config="true" duration-ms="2" started-at="2022-01-21T19:14:56Z" finished-at="2022-01-21T19:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails()[pri:1, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" duration-ms="3811" started-at="2022-01-21T19:14:56Z" finished-at="2022-01-21T19:14:59Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="regpath__button-next-text">...</span> is not clickable at point (494, 525). Other element would receive the click: <p class="cookies-policy__par">...</p>
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [065eb8393820e53260810f66d1e2e1cd, clickElement {id=585f27c0-b174-4814-9217-9c74d3f2d48b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50332/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (065eb8393820e53260810f66d1e2e1cd)] -> xpath: //span[contains(text(),'Continue')]]
+Session ID: 065eb8393820e53260810f66d1e2e1cd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="regpath__button-next-text">...</span> is not clickable at point (494, 525). Other element would receive the click: <p class="cookies-policy__par">...</p>
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'VIMAL', ip: '10.10.10.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [065eb8393820e53260810f66d1e2e1cd, clickElement {id=585f27c0-b174-4814-9217-9c74d3f2d48b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50332/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (065eb8393820e53260810f66d1e2e1cd)] -> xpath: //span[contains(text(),'Continue')]]
+Session ID: 065eb8393820e53260810f66d1e2e1cd
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy15.click(Unknown Source)
+at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
+at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:189)
+at com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(SignUpTest.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserShouldAbleToSignUpByEnteringMandatoryDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.heartbingo.testsuite.SignUpTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="561" started-at="2022-01-21T19:15:00Z" finished-at="2022-01-21T19:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.heartbingo.testsuite.SignUpTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

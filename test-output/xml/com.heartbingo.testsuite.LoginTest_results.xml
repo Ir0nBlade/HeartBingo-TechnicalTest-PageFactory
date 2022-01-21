@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Automation Test"
-           tests="1"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="1.962">
+           time="9.992">
   <properties />
   
   
-            <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="1.962" classname="com.heartbingo.testsuite.LoginTest" />
+            <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="1.922" classname="com.heartbingo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="2.338" classname="com.heartbingo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldLoginWithValidCredentials" time="3.713" classname="com.heartbingo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="2.019" classname="com.heartbingo.testsuite.LoginTest" />
       
 </testsuite>

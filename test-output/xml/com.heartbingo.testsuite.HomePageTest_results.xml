@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Automation Test"
+<testsuite name="Homepage Test"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="1.116">
+           time="1.770">
   <properties />
   
   
-            <testcase name="verifyUsershouldNavigateToTermsAndConditons" time="0.821" classname="com.heartbingo.testsuite.HomePageTest" />
-                <testcase name="verifyUserShouldNavigateToHomePageSuccessfully" time="0.295" classname="com.heartbingo.testsuite.HomePageTest" />
+            <testcase name="verifyUserShouldNavigateToHomePageSuccessfully" time="0.253" classname="com.heartbingo.testsuite.HomePageTest" />
+                <testcase name="verifyUsershouldNavigateToTermsAndConditons" time="1.517" classname="com.heartbingo.testsuite.HomePageTest" />
       
 </testsuite>

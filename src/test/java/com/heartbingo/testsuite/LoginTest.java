@@ -7,7 +7,9 @@ import com.heartbingo.testbase.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import resources.testdata.TestData;
 
 /**
  * @author Vimal Vithalpura
@@ -28,17 +30,33 @@ public class LoginTest extends TestBase {
 
     /**
      * This Test will verify user should not login with invalid credentials
+     * DataProvider used to get multiple sets of data
      * Verification is done by validating Error message
      *
      */
-    @Test (groups = {"regression"})
-    public void verifyUserShouldNotAbleToLoginWithInvalidUserName(){
+    @Test (priority = 0, groups = {"smoke"}, dataProvider = "Credentials", dataProviderClass = TestData.class)
+    public void verifyUserShouldNotAbleToLoginWithInvalidUserName(String username, String password){
         homePage.clickOnLoginbutton();
-        loginPage.enterUsername(doGetRandomEmail());
-        loginPage.enterPassword(doGetRandomString(9));
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
         loginPage.clickOnLoginButton();
         Assert.assertEquals(loginPage.getErrorMessageText(),"The username or password you entered is incorrect. Please try again.");
         Assert.assertEquals(loginPage.forgottenYourPasswordLink(),"Forgotten your Password?");
+    }
+
+    /**
+     * This Test will verify user should login with valid credential
+     * Parameters for email and password is passed into LoginTest.xml file
+     *
+     */
+    @Test (priority = 1, groups = {"regression"})
+    @Parameters({"email", "password"})
+    public void verifyUserShouldLoginWithValidCredentials(String email, String password) throws InterruptedException {
+        homePage.clickOnLoginbutton();
+        loginPage.enterUsername(email);
+        loginPage.enterPassword(password);
+        loginPage.clickOnLoginButton();
+        Assert.assertEquals(homePage.getInformationRequiredText(),"Information Required - Click Here");
     }
 
 }

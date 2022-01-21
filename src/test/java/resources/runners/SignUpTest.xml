@@ -7,13 +7,8 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
 
-    <parameter name="email" value="smash9099@protonmail.com"/>
-    <parameter name="password" value="$hadowOfTheLight99"/>
-
-    <test name="Automation Test" >
+    <test name="SignUp Test" >
         <classes>
-            <class name="com.heartbingo.testsuite.HomePageTest"/>
-            <class name="com.heartbingo.testsuite.LoginTest"/>
             <class name="com.heartbingo.testsuite.SignUpTest"/>
         </classes>
     </test>

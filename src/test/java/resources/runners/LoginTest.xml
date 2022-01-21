@@ -12,9 +12,7 @@
 
     <test name="Automation Test" >
         <classes>
-            <class name="com.heartbingo.testsuite.HomePageTest"/>
             <class name="com.heartbingo.testsuite.LoginTest"/>
-            <class name="com.heartbingo.testsuite.SignUpTest"/>
         </classes>
     </test>
 </suite>

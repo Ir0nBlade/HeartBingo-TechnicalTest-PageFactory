@@ -25,24 +25,27 @@ public class LoginPage extends Utility {
 
     @CacheLookup
     @FindBy (id = "username")
-    WebElement usernameField;
+    WebElement txtUsernameField;
 
     @CacheLookup
     @FindBy (id = "password")
-    WebElement passwordField;
+    WebElement txtPasswordField;
 
     @CacheLookup
     @FindBy (xpath = "//button[contains(text(),'Log In')]")
-    WebElement loginButton;
+    WebElement btnLoginButton;
 
     @CacheLookup
     @FindBy (className = "login_errorMessageWrapper__2ZcGx")
-    WebElement errorMessge;
+    WebElement msgErrorMessge;
 
     @CacheLookup
     @FindBy (className = "login_toCenter__1zNiC")
-    WebElement forgottenPassword;
+    WebElement lnkForgottenPassword;
 
+    @CacheLookup
+    @FindBy (xpath = "//button[contains(text(),'Log Out')]")
+    WebElement btnLogout;
 
     public void swithToFrame(){
         driver.switchTo().frame(iFrame);
@@ -51,27 +54,32 @@ public class LoginPage extends Utility {
 
     public void enterUsername(String username){
         swithToFrame();
-        doSendTextToElement(usernameField, username);
+        doSendTextToElement(txtUsernameField, username);
         CustomListeners.test.log(Status.PASS,"Enter Username ");
     }
 
     public void enterPassword(String password){
-        doSendTextToElement(passwordField, password);
+        doSendTextToElement(txtPasswordField, password);
         CustomListeners.test.log(Status.PASS,"Enter Password ");
     }
 
     public void clickOnLoginButton(){
-        doClickOnElement(loginButton);
+        doClickOnElement(btnLoginButton);
         CustomListeners.test.log(Status.PASS,"Click on Login button ");
     }
 
     public String getErrorMessageText(){
         CustomListeners.test.log(Status.PASS,"Get Error Message Text ");
-        return doGetTextFromElement(errorMessge);
+        return doGetTextFromElement(msgErrorMessge);
     }
 
     public String forgottenYourPasswordLink(){
         CustomListeners.test.log(Status.PASS,"Get Forgotten Password Link Text ");
-        return doGetTextFromElement(forgottenPassword);
+        return doGetTextFromElement(lnkForgottenPassword);
+    }
+
+    public void clickOnLogoutButton(){
+        doClickOnElement(btnLogout);
+        CustomListeners.test.log(Status.PASS,"Click on Logout button ");
     }
 }

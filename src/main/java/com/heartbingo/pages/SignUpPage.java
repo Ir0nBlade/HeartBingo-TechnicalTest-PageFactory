@@ -21,196 +21,196 @@ public class SignUpPage extends Utility {
 
     @CacheLookup
     @FindBy (id = "first_name")
-    WebElement firstNameField;
+    WebElement txtFirstNameField;
 
     @CacheLookup
     @FindBy (id = "last_name")
-    WebElement lastNameField;
+    WebElement txtLastNameField;
 
     @CacheLookup
     @FindBy (xpath = "//span[contains(text(),'You must provide your first name')]")
-    WebElement firstNameErrorMessage;
+    WebElement msgFirstNameErrorMessage;
 
     @CacheLookup
     @FindBy (xpath = "//span[contains(text(),'You must provide your surname')]")
-    WebElement surnameErrorMessage;
+    WebElement msgSurnameErrorMessage;
 
     @CacheLookup
     @FindBy (css = ".regpath__button-next-text")
-    WebElement continueButton;
+    WebElement btnContinueButton;
 
     @CacheLookup
     @FindBy (xpath = "//p[contains(text(),'Enter your full name to join Heart Bingo')]")
-    WebElement joinHeartBingoText;
+    WebElement msgJoinHeartBingoText;
 
     @CacheLookup
     @FindBy (className = "bvs-button-card-alternative")
-    WebElement gender;
+    WebElement btnGender;
 
     @CacheLookup
     @FindBy (id = "regpath_form_email_input")
-    WebElement emailField;
+    WebElement txtEmailField;
 
     @CacheLookup
     @FindBy (id = "password")
-    WebElement passwordField;
+    WebElement txtPasswordField;
 
     @CacheLookup
     @FindBy (name = "phone_number")
-    WebElement mobileNumberField;
+    WebElement txtMobileNumberField;
 
     @CacheLookup
     @FindBy (xpath = "//p[contains(text(),'You must be over the age of 18 to proceed')]")
-    WebElement ageWarningText;
+    WebElement txtAgeWarningText;
 
     @CacheLookup
     @FindBy (xpath = "//select[@name='day']")
-    WebElement dobDay;
+    WebElement drpDobDay;
 
     @CacheLookup
     @FindBy (xpath = "//select[@name='month']")
-    WebElement dobMonth;
+    WebElement drpDobMonth;
 
     @CacheLookup
     @FindBy (xpath = "//select[@name='year']")
-    WebElement dobYear;
+    WebElement drpDobYear;
 
     @CacheLookup
     @FindBy (id = "address1")
-    WebElement address1Field;
+    WebElement txtAddress1Field;
 
     @CacheLookup
     @FindBy (id = "city")
-    WebElement cityField;
+    WebElement txtCityField;
 
     @CacheLookup
     @FindBy (id = "postcode")
-    WebElement postcodeField;
+    WebElement txtPostcodeField;
 
     @CacheLookup
     @FindBy (xpath = "//span[contains(text(),'Continue')]")
-    WebElement getContinueButton;
+    WebElement btnGetContinueButton;
 
     @CacheLookup
     @FindBy (xpath = "//div[@class='account-form__circle-selector']")
-    WebElement selectCurrency;
+    WebElement btnCurrency;
 
     @CacheLookup
     @FindBy (xpath = "//button[@class='bvs-button-alternative is-round is-secondary account-box']")
-    WebElement selectExclusiveOffers;
+    WebElement chkSelectExclusiveOffers;
 
     @CacheLookup
     @FindBy (xpath = "//div[@class='bvs-checkbox-card__checkbox']")
-    WebElement checkbox;
+    WebElement chkCheckbox;
 
     @CacheLookup
     @FindBy (xpath = "//button[@type='submit']")
-    WebElement createAccountButton;
+    WebElement btnCreateAccountButton;
 
     @CacheLookup
     @FindBy (xpath = "//span[@class='bvs-icon is-big is-cross is-inverted']")
-    WebElement closeButton;
+    WebElement btnCloseButton;
 
 
     public String getJoinHeartBingoText(){
         CustomListeners.test.log(Status.PASS,"Get text from Join Heart Bingo ");
-        return doGetTextFromElement(joinHeartBingoText);
+        return doGetTextFromElement(msgJoinHeartBingoText);
     }
 
     public void enterFirstName(String firstName){
-        doSendTextToElement(firstNameField, firstName);
+        doSendTextToElement(txtFirstNameField, firstName);
         CustomListeners.test.log(Status.PASS,"Enter First Name ");
     }
 
     public void enterLastName(String lastName){
-        doSendTextToElement(lastNameField, lastName);
+        doSendTextToElement(txtLastNameField, lastName);
         CustomListeners.test.log(Status.PASS,"Enter Last Name ");
     }
 
     public String getFirstNameNullErrorMessage(){
         CustomListeners.test.log(Status.PASS,"Get Error message for Null first name ");
-        return doGetTextFromElement(firstNameErrorMessage);
+        return doGetTextFromElement(msgFirstNameErrorMessage);
     }
 
     public String getSurnameNullErrorMessage(){
         CustomListeners.test.log(Status.PASS,"Get Error message for Null Last Name ");
-        return doGetTextFromElement(surnameErrorMessage);
+        return doGetTextFromElement(msgSurnameErrorMessage);
     }
 
     public void clickOnContinueButton(){
-        doClickOnElement(continueButton);
+        doClickOnElement(btnContinueButton);
         CustomListeners.test.log(Status.PASS,"Click on Continue button ");
     }
 
     public void selectGender(String gen){
-        doclickOnElement(gender, gen);
+        doclickOnElement(btnGender, gen);
         CustomListeners.test.log(Status.PASS,"Click on Gender Male or Female ");
     }
 
     public void enterEmailAddress(String email){
-        doSendTextToElement(emailField, email);
+        doSendTextToElement(txtEmailField, email);
         CustomListeners.test.log(Status.PASS,"Enter email address into email field ");
     }
 
     public void enterPassword(String password){
-        doSendTextToElement(passwordField, password);
+        doSendTextToElement(txtPasswordField, password);
         CustomListeners.test.log(Status.PASS,"Enter password into password field ");
     }
 
     public void enterMobileNumber(String mobile){
-        doSendTextToElement(mobileNumberField, mobile);
+        doSendTextToElement(txtMobileNumberField, mobile);
         CustomListeners.test.log(Status.PASS,"Enter Mobile number ");
     }
 
     public String getAgeWarningText(){
         CustomListeners.test.log(Status.PASS,"Get text for Age warning message ");
-        return doGetTextFromElement(ageWarningText);
+        return doGetTextFromElement(txtAgeWarningText);
     }
 
     public void selectDayMonthYearForDateOfBirth(String day, String month, String year){
-        doSelectByVisibleTextFromDropDown(dobDay, day);
+        doSelectByVisibleTextFromDropDown(drpDobDay, day);
         CustomListeners.test.log(Status.PASS,"Select Day from dropdown for Date of Birth ");
-        doSelectByVisibleTextFromDropDown(dobMonth, month);
+        doSelectByVisibleTextFromDropDown(drpDobMonth, month);
         CustomListeners.test.log(Status.PASS,"Select Month from dropdown for Date of Birth ");
-        doSelectByVisibleTextFromDropDown(dobYear, year);
+        doSelectByVisibleTextFromDropDown(drpDobYear, year);
         CustomListeners.test.log(Status.PASS,"Select Year from dropdown for Date of Birth ");
     }
 
     public void enterAddressDetails(String address1, String city, String postcode){
-        doSendTextToElement(address1Field, address1);
+        doSendTextToElement(txtAddress1Field, address1);
         CustomListeners.test.log(Status.PASS,"Enter address line 1 in address field ");
-        doSendTextToElement(cityField, city);
+        doSendTextToElement(txtCityField, city);
         CustomListeners.test.log(Status.PASS,"Enter City into City field ");
-        doSendTextToElement(postcodeField, postcode);
+        doSendTextToElement(txtPostcodeField, postcode);
         CustomListeners.test.log(Status.PASS,"Enter postcode into Postcode field ");
     }
 
     public void doClickOnContinueButton()  {
-        doClickOnElement(getContinueButton);
+        doClickOnElement(btnGetContinueButton);
         CustomListeners.test.log(Status.PASS,"Click on Continue button ");
     }
 
     public void selectCurrency(String currency){
-        doclickOnElement(selectCurrency, currency);
+        doclickOnElement(btnCurrency, currency);
         CustomListeners.test.log(Status.PASS,"Select Currency GBP or EUR ");
     }
 
     public void selectExclusiveOffers(String yesOrNo){
-        doclickOnElement(selectExclusiveOffers, yesOrNo);
+        doclickOnElement(chkSelectExclusiveOffers, yesOrNo);
         CustomListeners.test.log(Status.PASS,"Select Yes or No option for Exclusive offers ");
     }
 
     public void clickTermsAndConditionCheckbox(){
-        doClickOnElement(checkbox);
+        doClickOnElement(chkCheckbox);
         CustomListeners.test.log(Status.PASS,"Click on checkbox for accepting Terms and Conditions ");
     }
 
     public void clickOnCreateAccountButton(){
-        doClickOnElement(createAccountButton);
+        doClickOnElement(btnCreateAccountButton);
         CustomListeners.test.log(Status.PASS,"Click on Create Account button ");
     }
     public void clickOncloseButton(){
-        doClickOnElement(closeButton);
+        doClickOnElement(btnCloseButton);
         CustomListeners.test.log(Status.PASS,"Click on Close Icon ");
     }
 }

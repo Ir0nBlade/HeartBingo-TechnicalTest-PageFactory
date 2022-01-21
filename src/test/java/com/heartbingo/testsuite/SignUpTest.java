@@ -47,7 +47,7 @@ public class SignUpTest extends TestBase {
      *  Verification is done by validating Error message
      *
      */
-    @Test (priority=0, groups={"sanity", "regression"})
+    @Test (priority=1, groups={"sanity", "regression"})
     public void verifyFirstNameAndLastNameFieldShouldNotBeNull(){
         homePage.clickOnSignUpButton();
         signUpPage.clickOnContinueButton();
@@ -59,7 +59,7 @@ public class SignUpTest extends TestBase {
      *  This test verify User should able to Sign Up by entering mandatory details
      *
      */
-    @Test (priority=1, groups={"regression"})
+    @Test (priority=2, groups={"regression"})
     public void verifyUserShouldAbleToSignUpByEnteringMandatoryDetails()  {
         homePage.clickOnSignUpButton();
         signUpPage.enterFirstName("Alan");

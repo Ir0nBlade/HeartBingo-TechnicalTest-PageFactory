@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 20 13:34:04 GMT 2022</td>
+<td>Started on:</td><td>Fri Jan 21 19:14:31 GMT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38698 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29109 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails()'><b>verifyUserShouldAbleToSignUpByEnteringMandatoryDetails</b><br>Test class: com.heartbingo.testsuite.SignUpTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;regpath__button-next-text&quot;&gt;...&lt;/span&gt; is not clickable at point (494, 608). Other element would receive the click: &lt;div class=&quot;cookies-policy cookies-policy--flat&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=97.0.4692.71)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;regpath__button-next-text&quot;&gt;...&lt;/span&gt; is not clickable at point (494, 525). Other element would receive the click: &lt;p class=&quot;cookies-policy__par&quot;&gt;...&lt;/p&gt;
+  (Session info: chrome=97.0.4692.99)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;VIMAL&apos;, ip: &apos;10.10.10.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [39a2e16f7c14684a95577a5ab957b6ad, clickElement {id=9b3f1031-77ea-4d8c-aa5b-72d62af9f4f0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:55442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55442/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (39a2e16f7c14684a95577a5ab957b6ad)] -&gt; xpath: //span[contains(text(),&apos;Continue&apos;)]]
-Session ID: 39a2e16f7c14684a95577a5ab957b6ad
+Command: [065eb8393820e53260810f66d1e2e1cd, clickElement {id=585f27c0-b174-4814-9217-9c74d3f2d48b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50332/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (065eb8393820e53260810f66d1e2e1cd)] -&gt; xpath: //span[contains(text(),&apos;Continue&apos;)]]
+Session ID: 065eb8393820e53260810f66d1e2e1cd
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -97,18 +97,18 @@ Session ID: 39a2e16f7c14684a95577a5ab957b6ad
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy15.click(Unknown Source)
 	at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
-	at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:190)
+	at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:189)
 	at com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(SignUpTest.java:75)
-... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407263135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace407263135'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;regpath__button-next-text&quot;&gt;...&lt;/span&gt; is not clickable at point (494, 608). Other element would receive the click: &lt;div class=&quot;cookies-policy cookies-policy--flat&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=97.0.4692.71)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1309191417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1309191417'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;regpath__button-next-text&quot;&gt;...&lt;/span&gt; is not clickable at point (494, 525). Other element would receive the click: &lt;p class=&quot;cookies-policy__par&quot;&gt;...&lt;/p&gt;
+  (Session info: chrome=97.0.4692.99)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;VIMAL&apos;, ip: &apos;10.10.10.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [39a2e16f7c14684a95577a5ab957b6ad, clickElement {id=9b3f1031-77ea-4d8c-aa5b-72d62af9f4f0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir3...}, goog:chromeOptions: {debuggerAddress: localhost:55442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55442/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (39a2e16f7c14684a95577a5ab957b6ad)] -&gt; xpath: //span[contains(text(),&apos;Continue&apos;)]]
-Session ID: 39a2e16f7c14684a95577a5ab957b6ad
+Command: [065eb8393820e53260810f66d1e2e1cd, clickElement {id=585f27c0-b174-4814-9217-9c74d3f2d48b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50332/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (065eb8393820e53260810f66d1e2e1cd)] -&gt; xpath: //span[contains(text(),&apos;Continue&apos;)]]
+Session ID: 065eb8393820e53260810f66d1e2e1cd
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -129,7 +129,7 @@ Session ID: 39a2e16f7c14684a95577a5ab957b6ad
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy15.click(Unknown Source)
 	at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
-	at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:190)
+	at com.heartbingo.pages.SignUpPage.doClickOnContinueButton(SignUpPage.java:189)
 	at com.heartbingo.testsuite.SignUpTest.verifyUserShouldAbleToSignUpByEnteringMandatoryDetails(SignUpTest.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -162,19 +162,19 @@ Session ID: 39a2e16f7c14684a95577a5ab957b6ad
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>4</td>
+<td>3</td>
 <td>com.heartbingo.testsuite.SignUpTest@f6c48ac</td></tr>
 <tr>
 <td title='com.heartbingo.testsuite.HomePageTest.verifyUsershouldNavigateToTermsAndConditons()'><b>verifyUsershouldNavigateToTermsAndConditons</b><br>Test class: com.heartbingo.testsuite.HomePageTest</td>
 <td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-87, 598)
-  (Session info: chrome=97.0.4692.71)
+  (Session info: chrome=97.0.4692.99)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;VIMAL&apos;, ip: &apos;10.10.10.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [41d3264abe4c651205dc3d8c02554e8d, clickElement {id=feecb640-6f9f-44d2-ba65-899963b17283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (41d3264abe4c651205dc3d8c02554e8d)] -&gt; link text: Terms &amp; Conditions]
-Session ID: 41d3264abe4c651205dc3d8c02554e8d
+Command: [3c7fdabec7f157d7049fb1afb38faf43, clickElement {id=7ab0ad75-be68-4890-81f9-84910321d6a5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50293/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3c7fdabec7f157d7049fb1afb38faf43)] -&gt; link text: Terms &amp; Conditions]
+Session ID: 3c7fdabec7f157d7049fb1afb38faf43
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -189,16 +189,16 @@ Session ID: 41d3264abe4c651205dc3d8c02554e8d
 	at com.heartbingo.utility.Utility.doClickOnElement(Utility.java:40)
 	at com.heartbingo.pages.HomePage.clickOnTermsAndConditonsLink(HomePage.java:105)
 	at com.heartbingo.testsuite.HomePageTest.verifyUsershouldNavigateToTermsAndConditons(HomePageTest.java:52)
-... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1311052922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1311052922'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-87, 598)
-  (Session info: chrome=97.0.4692.71)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557568981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557568981'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-87, 598)
+  (Session info: chrome=97.0.4692.99)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;VIMAL&apos;, ip: &apos;10.10.10.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [41d3264abe4c651205dc3d8c02554e8d, clickElement {id=feecb640-6f9f-44d2-ba65-899963b17283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55357/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (41d3264abe4c651205dc3d8c02554e8d)] -&gt; link text: Terms &amp; Conditions]
-Session ID: 41d3264abe4c651205dc3d8c02554e8d
+Command: [3c7fdabec7f157d7049fb1afb38faf43, clickElement {id=7ab0ad75-be68-4890-81f9-84910321d6a5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50293/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3c7fdabec7f157d7049fb1afb38faf43)] -&gt; link text: Terms &amp; Conditions]
+Session ID: 3c7fdabec7f157d7049fb1afb38faf43
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -275,12 +275,12 @@ Session ID: 41d3264abe4c651205dc3d8c02554e8d
 <tr>
 <td title='com.heartbingo.testsuite.HomePageTest.verifyUserShouldNavigateToHomePageSuccessfully()'><b>verifyUserShouldNavigateToHomePageSuccessfully</b><br>Test class: com.heartbingo.testsuite.HomePageTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.heartbingo.testsuite.HomePageTest@6eebc39e</td></tr>
 <tr>
 <td title='com.heartbingo.testsuite.LoginTest.verifyUserShouldNotAbleToLoginWithInvalidUserName()'><b>verifyUserShouldNotAbleToLoginWithInvalidUserName</b><br>Test class: com.heartbingo.testsuite.LoginTest</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>com.heartbingo.testsuite.LoginTest@464bee09</td></tr>
 </table><p>
 </body>
