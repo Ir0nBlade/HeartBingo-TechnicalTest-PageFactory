@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.716">
+           time="4.853">
   <properties />
   
   
-            <testcase name="verifyFirstNameAndLastNameFieldShouldNotBeNull" time="0.639" classname="com.heartbingo.testsuite.SignUpTest" />
-                <testcase name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" time="3.667" classname="com.heartbingo.testsuite.SignUpTest" />
-                <testcase name="verifyUserNavigateToSignUpPageSuccessfully" time="0.410" classname="com.heartbingo.testsuite.SignUpTest" />
+            <testcase name="verifyFirstNameAndLastNameFieldShouldNotBeNull" time="0.661" classname="com.heartbingo.testsuite.SignUpTest" />
+                <testcase name="verifyUserShouldAbleToSignUpByEnteringMandatoryDetails" time="3.622" classname="com.heartbingo.testsuite.SignUpTest" />
+                <testcase name="verifyUserNavigateToSignUpPageSuccessfully" time="0.570" classname="com.heartbingo.testsuite.SignUpTest" />
       
 </testsuite>

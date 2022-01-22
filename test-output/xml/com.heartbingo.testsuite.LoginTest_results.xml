@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.992">
+           time="9.834">
   <properties />
   
   
-            <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="1.922" classname="com.heartbingo.testsuite.LoginTest" />
-                <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="2.338" classname="com.heartbingo.testsuite.LoginTest" />
-                <testcase name="verifyUserShouldLoginWithValidCredentials" time="3.713" classname="com.heartbingo.testsuite.LoginTest" />
-                <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="2.019" classname="com.heartbingo.testsuite.LoginTest" />
+            <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="1.791" classname="com.heartbingo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="1.880" classname="com.heartbingo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldLoginWithValidCredentials" time="4.130" classname="com.heartbingo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldNotAbleToLoginWithInvalidUserName" time="2.033" classname="com.heartbingo.testsuite.LoginTest" />
       
 </testsuite>
